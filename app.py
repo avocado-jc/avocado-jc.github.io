@@ -11,7 +11,7 @@ def index():
     if request.method == 'POST':
         
         return redirect('/')
-    return render_template("index.html")
+    return render_template("index.html", nums=nums)
 
 
 app.run(debug=True)
