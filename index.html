@@ -17,13 +17,38 @@
             <img src="head shot cropped.jpg" alt="Logo for Jonathon">
         </header>
             
-        <nav>
-                <a href="/avocado-jc.github.io/" class="nounderline">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">About</a>
-                <a href="#">Experience</a>
-                <a href="#">Projects</a>
-                <a href="#">Awards</a>
+        <div class="about-banner"> 
+            <div class="picture">
+                <img src="{{ url_for('static', filename='head_shot_cropped.jpg') }}">
+            </div>
+            <h1> Jonathon Cavada </h1>
+            <h2> Linguist - Developer - Bassist</h2>
+            <nav>
+                <a href='/'>Home</a>
+                <a href='/'>About</a>
+                <a href='/'>Blogs Themes</a>
+    
+            </nav>
+            <div class="social-media">
+                <div class="linkedin">
+                    <a class="linkedin" href="https://www.linkedin.com/in/cavada-jonathon" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </div>
+                <div class="twitter">
+                    <a class="twitter" href="https://twitter.com/CavadaJonathon" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </div>
+                <div class="github">
+                    <a class="github" href="https://github.com/avocado-jc" target="_blank">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+            </div> 
+        </div>
+        <nav class="social media">
+
         </nav>
 
         <main>
