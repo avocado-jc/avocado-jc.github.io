@@ -9,6 +9,7 @@ body {
     background-image: url(pdx.jpg);
     background-size: cover;
     justify-content: center;
+    align-items: center;
 }
 
 .picture {
