@@ -94,13 +94,13 @@ body  {
     text-align: center;
     color: rgba(255, 255, 255, 0.747);
     text-shadow: 0 0 1vh rgb(0, 0, 255);
-    font-size: 3.8vh;
+    font-size: 3vh;
 }
 
 .about-banner h2 {
     box-shadow: 0 0 1vh rgba(255, 255, 255, 0.637);
     text-align: center;
-    font-size: 2.8vh;
+    font-size: 1.35vh;
     background-color: rgba(255, 255, 255, 0.156);
     color: rgb(249, 249, 249);
     text-shadow: 0 0 1vh rgb(0, 0, 255);
@@ -124,7 +124,7 @@ nav a {
     text-decoration: none;
     box-shadow: 0 0 1vh rgba(255, 255, 255, 0.175);
     background-color: rgba(5, 3, 3, 0.342);
-    font-size: 1.65vh;
+    font-size: 1.25vh;
     border-radius: 5vh;
     font-style: none;
     /* font-family:'Courier New', Courier, monospace; */
@@ -157,7 +157,7 @@ nav a:hover {
 .social-media i {
     box-shadow: .5vh .51vh .5vh rgba(0, 0, 0, 0.211);
 
-    background-color:rgba(80, 144, 222, 0.423);
+    background-color:rgb(80, 144, 222);
     padding: 1vh;
     margin: 1vh;
     border-radius: 25vh;
@@ -172,6 +172,7 @@ nav a:hover {
 }
 
 main {
+    /* line-height: 4vh; */
     font-family: Helvetica;
     font-weight: 500;
     letter-spacing: .15vh;
@@ -239,15 +240,16 @@ audio {
 }
 
 .about {
+    
     font-family: Helvetica;
     gap: 1vh;
-    padding:1vh;
-    background-color:rgba(0, 0, 0, 0.785);
+    padding:.8vh;
+    background-color:rgba(0, 0, 0, 0.725);
     display: flex;
     flex-direction: column;
     /* height: 200vh; */
 
-    justify-content: start;
+    /* justify-content: center; */
 }
 
 .banner-image {
@@ -256,7 +258,8 @@ audio {
 }
 
 .about1 {
-    gap: 1vh;
+    color: white;
+    gap: .8vh;
     font-family: Helvetica;
     /* width: inherit; */
     height: 50%;
@@ -265,32 +268,54 @@ audio {
     justify-content: space-between;
 }
 
-.about-text {
-    font-family: Helvetica;
 
-    margin: 1vh;
-    justify-content: center;
+.about-box {
+    display: block;
+    background-color: grey;
+    font-family: Helvetica;
+    text-align: center;
+    /* margin: .8vh; */
+    /* justify-content: center; */
+}
+
+.about-text {
+    font-size: 1vh;
+    font-family: Helvetica;
+    text-align: right;
+    margin: .8vh;
+    /* justify-content: center; */
 }
 
 .header {
-    font-family: Helvetica;
 
+    font-family: Helvetica;
+    justify-content: center;
     color: white;
-    font-size: 4vh;
+
     background-color: rgba(218, 105, 105, 0.584);
     /* margin: 1vh; */
-    padding: 1vh;
-    text-align: center;
+    padding: .5vh;
+    /* text-align: center; */
     display: flex;
     gap: 1vh;
     flex-direction: row;
     font-family: Helvetica;
 
-    font-size: 1vh;
+    font-size: 2vh;
 }
 
-.header h1 {
+.header p {
+    color: yellow;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: baseline;
+    font-size: 2.5vh;
+}
 
+.header h2 {
+    height: 100%;
+    color: rgb(51, 204, 255);
 }
 
 .about-text ul {
