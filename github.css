@@ -109,7 +109,7 @@ body  {
 .about-banner nav {
     box-shadow:rgba(0, 0, 0, 0.099);
     padding: .2vh;
-    gap: 1vh;
+    gap: .5vh;
     border: .8vh solid rgba(0, 0, 0, 0.126);
     margin: .5vh;
     background-color:rgba(255, 255, 255, 0.166);
