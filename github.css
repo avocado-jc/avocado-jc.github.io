@@ -207,7 +207,7 @@ main {
 }
 
 video {
-    margin: 0;
+    padding: 1vh;
     height: 100%;
     width: 100%;
 
@@ -280,7 +280,7 @@ audio {
     justify-content: center;
     color: white;
 
-    background-color: rgb(201, 69, 69);
+    background-color: rgba(201, 69, 69, 0.581);
     margin: 0;
     padding: .5vh;
     /* text-align: center; */
@@ -350,22 +350,31 @@ section {
     width: 100%;
 }
 
-.about h4 {
+.title {
 
     text-shadow: 0 0 1vh rgb(255, 255, 255);
     font-weight: 800;
     margin: 0;
-    letter-spacing: 1.5vh;
-    color: rgb(159, 0, 0);
+    letter-spacing: .2vh;
+    color: rgba(159, 0, 0, 0.495);
     padding: 3vh;
     background-color:rgba(80, 144, 222, 0.407);
     text-align: center;
-    font-size: 2.2vh;
+    font-size: 3.8vh;
     text-transform: capitalize;
 }
 
+.wobbly {
+    text-shadow: 0 0 1vh black;
+    margin-top: 1vh;
+    color:rgb(80, 222, 125);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: rotate(-20deg);
+}
 
 .experience {
+    color: white;
+    font-size: 2.2vh;
     background-image: url(pdx.jpg);
     font-family: Helvetica;
     gap: 1vh;
@@ -385,7 +394,7 @@ section {
 
     color: white;
 
-    background-color: rgb(201, 69, 69);
+    background-color: rgba(201, 69, 69, 0.545);
     /* margin: 0; */
     padding: .5vh;
     align-items: baseline;
@@ -397,12 +406,34 @@ section {
     font-size: 2vh;
 }
 
+.projects {
+    background-image: urL(324.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-.projects p, .slide p {
+.slide h1 {
+    text-shadow: 0 0 1vh black;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.373);
+    font-size: 10vh;
+}
+
+.slide p {
+    text-shadow: 0 0 1vh black;
+    line-height: 3.5vh;
+    letter-spacing: .2vh;
+    padding: 7.5vh;
+    padding-left: 1vh;
+    font-weight: 550;
+    text-align: left;
+    color: white;
+    background-color:rgba(80, 222, 125, 0.307);
     font-family: Helvetica;
 
-    padding: 5vh;
-    margin: 3.5vh;
+    /* padding: 5vh; */
+    margin: 1vh;
     font-size: 2.5vh;
     /* padding: 5vh */
 }
@@ -413,9 +444,9 @@ section {
 
     color: white;
 
-    background-color: rgb(201, 69, 69);
+    background-color: rgba(201, 69, 69, 0.451);
     margin: 0;
-    padding: .8vh;
+    /* padding: .8vh; */
     align-items: baseline;
     display: flex;
     gap: 1vh;
@@ -468,18 +499,45 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+}
+
+.practicum p {
+    text-shadow: 0 0 1vh black;
+    line-height: 3.5vh;
+    letter-spacing: .2vh;
+    padding: 7.5vh;
+    padding-left: 1vh;
+    font-weight: 550;
+    text-align: left;
+    color: white;
+    background-color:rgba(80, 222, 125, 0.241);
+    font-family: Helvetica;
+
+    /* padding: 5vh; */
+    margin: 1vh;
+    font-size: 2.5vh;
+    /* padding: 5vh */
+}
+
+
+.practicum h1 {
+    text-shadow: 0 0 1vh black;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.373);
+    font-size: 3.5vh;
 }
 
 .practicum img {
     border: .5vh solid rgba(228, 58, 58, 0.256);
-    padding: 2vh;
+    padding: .2vh;
     width: 33.3%
 }
 
 .about1 .box {
     font-weight: 550;
     padding: 1vh;
-    font-family: Helvetica;
+    /* font-family: Helvetica; */
     font-size: 1.8vh;
     display: flex;
     flex-direction: column;
@@ -488,7 +546,25 @@ section {
 
 
 
+.box h2 {
+    font-size: 1.8vh;
+}
 
+
+.box p {
+    font-size: 1vh;
+    font-style:oblique;
+    text-indent: 1vh;
+}
+
+.blurb {
+    
+    font-size: 2vh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.282);
+    /* margin: 1vh; */
+    padding:20vh;
+}
 
 
 
