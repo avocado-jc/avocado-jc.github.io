@@ -42,6 +42,8 @@ body  {
 
 }
 .refresh {
+    height: 10vh;
+    font-size: 1.5vh;
     text-shadow:0 0 1vh rgba(0, 0, 255, 0.414);
     color: rgba(255, 255, 255, 0.71);
     font-family:'Courier New', Courier, monospace;
@@ -65,7 +67,7 @@ body  {
 
 }
 .picture img {
-    margin-top: 5vh;
+    margin-top: 15vh;
     margin-left: 6.25vh;
     margin-right: 6.25vh;
     width: 25vh;
@@ -135,7 +137,8 @@ nav a {
 }
 
 nav a:hover {
-    font-size:1.4vh;
+
+    font-size:1.9vh;
     text-transform: uppercase;
     box-shadow: 0 0 1vh purple;
     color: rgb(255, 255, 255);
@@ -143,14 +146,15 @@ nav a:hover {
 }
 
 .social-media {
-    gap:1%;
-    margin-right: 5vh;
-    margin-top: 2.5vh;
-    justify-content: flex-end;
+    /* gap:1%; */
+    /* margin-right: 5vh; */
+    /* margin-top: 2.5vh; */
     /* text-align:left; */
     /* align-items: center; */
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
 .nounderline {
@@ -159,17 +163,17 @@ nav a:hover {
 
 .social-media i {
     box-shadow: .5vh .51vh .5vh rgba(0, 0, 0, 0.211);
-
     background-color:rgb(80, 144, 222);
-    padding: 1vh;
-    margin: 1vh;
-    border-radius: 25vh;
+    padding: .70vh;
+    margin: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 100vw;
     border: .1vh solid rgb(255, 255, 255);
-    font-size:4vh;
+    font-size:8vw;
 }
 
 .social-media i:hover {
-    /* padding:1.5vh; */
+    padding:1.4vh;
     text-shadow: 0 0 1vh rgb(255, 120, 143);
     box-shadow: 0 0 1vh rgb(255, 125, 147);
 }
@@ -199,7 +203,23 @@ main {
     /* height: 200vh; */
 }
 
+main h1 {
+    font-family: helvetica;
+    color: white;
+    text-shadow: 0 0 1vh black;
+
+}
+main p {
+    font-weight: 650;
+    letter-spacing: .1vh;
+    font-family: helvetica;
+    color: white;
+    text-shadow: 0 0 1vh black;
+
+}
+
 .slide {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -223,6 +243,8 @@ audio {
 }
 
 .about {
+    text-shadow: 0 0 1vh black;
+
     background-image: url(pdx.jpg);
     font-family: Helvetica;
     gap: 1vh;
@@ -254,6 +276,8 @@ audio {
 
 
 .about-box {
+    text-shadow: 0 0 1vh black;
+
     letter-spacing: .35vh;
     /* width: 75vw; */
     font-size: 1.8vh; 
@@ -266,7 +290,16 @@ audio {
     justify-content: center;
 }
 
+.about-box h2 {
+    text-shadow: 0 0 1vh black;
+    background-color: rgba(0, 0, 0, 0.152);
+    border-radius: 15vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.292);
+}
+
 .about-text {
+    text-shadow: 0 0 1vh black;
+
     font-size: 1vh;
     font-family: Helvetica;
     text-align: center;
@@ -276,11 +309,13 @@ audio {
 
 .about-header {
     text-shadow: 0 0 1vh black;
+
+    text-shadow: 0 0 1vh black;
     font-family: Helvetica;
     justify-content: center;
     color: white;
 
-    background-color: rgba(201, 69, 69, 0.581);
+    background-color: rgb(201, 69, 69);
     margin: 0;
     padding: .5vh;
     /* text-align: center; */
@@ -356,7 +391,7 @@ section {
     font-weight: 800;
     margin: 0;
     letter-spacing: .2vh;
-    color: rgba(159, 0, 0, 0.495);
+    color: rgba(159, 0, 0, 0.782);
     padding: 3vh;
     background-color:rgba(80, 144, 222, 0.407);
     text-align: center;
@@ -394,7 +429,7 @@ section {
 
     color: white;
 
-    background-color: rgba(201, 69, 69, 0.545);
+    background-color: rgb(201, 69, 69);
     /* margin: 0; */
     padding: .5vh;
     align-items: baseline;
@@ -417,7 +452,7 @@ section {
     text-shadow: 0 0 1vh black;
     color: white;
     background-color: rgba(255, 255, 255, 0.373);
-    font-size: 10vh;
+    font-size: 2vh;
 }
 
 .slide p {
@@ -547,28 +582,55 @@ section {
 
 
 .box h2 {
+    text-align: center;
     font-size: 1.8vh;
 }
 
 
 .box p {
-    font-size: 1vh;
+    color:rgba(127, 255, 212, 0.634);
+    font-size: 1.5vh;
     font-style:oblique;
     text-indent: 1vh;
 }
 
 .blurb {
-    
+    text-shadow: 0 0 1vh black;
+    text-align: left;
     font-size: 2vh;
     color: white;
-    background-color: rgba(255, 255, 255, 0.282);
+    background-color: rgba(33, 12, 12, 0.707);
     /* margin: 1vh; */
-    padding:20vh;
+    padding-left:5vh;
+    padding-right:5vh;
+}
+.blurb ul {
+    
+    font-weight: 550;
+    gap: 1vh;
+    text-shadow: 0 0 1vh rgb(248, 15, 15);
+    text-transform: uppercase;
+    font-size: 3vh;
+
 }
 
+.blurb li {
+    font-family: monospace;
+    text-shadow: 0 0 1vh rgb(0, 21, 255);
+    text-transform: lowercase;
+    font-size: 2vh;
 
+}
 
-
+.blurb h1 {
+    text-shadow: 0 0 1vh black;
+    font-weight: 450;
+    letter-spacing: .6vh;
+    padding: 3vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.188);
+}
 
 
 
