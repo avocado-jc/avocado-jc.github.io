@@ -196,6 +196,12 @@ main {
     /* height: 50vh; */
 }
 
+main a {
+    font-weight: 750;
+    color: #fdfd07;
+    text-shadow: 0 0 1vh rgb(62, 7, 7);
+}
+
 .projects {
     background-color:rgba(65, 12, 255, 0.244);
     /* margin: 0; */
@@ -308,7 +314,7 @@ audio {
 }
 
 .about-header {
-    text-shadow: 0 0 1vh black;
+    align-items: baseline;
 
     text-shadow: 0 0 1vh black;
     font-family: Helvetica;
@@ -316,7 +322,7 @@ audio {
     color: white;
 
     background-color: rgb(201, 69, 69);
-    margin: 0;
+    /* margin: 0; */
     padding: .5vh;
     /* text-align: center; */
     display: flex;
@@ -324,7 +330,13 @@ audio {
     flex-direction: row;
     font-family: Helvetica;
 
+    font-size: 1vh;
+}
+
+.about-header h1 {
     font-size: 2vh;
+    font-style: oblique;
+    align-content: center;
 }
 
 .about-header p {
@@ -334,14 +346,14 @@ audio {
     text-align: center;
     display: flex;
     justify-content: baseline;
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 .about-header h2 {
     
     text-shadow: 0 0 1vh black;
     color: rgb(51, 204, 255);
-    font-size: 3vh;
+    font-size: 5vh;
 }
 
 .home-banner{
@@ -410,11 +422,12 @@ section {
 .experience {
     color: white;
     font-size: 2.2vh;
-    background-image: url(pdx.jpg);
+    background-image: url(shack_and_i.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Helvetica;
     gap: 1vh;
     padding:.8vh;
-    background-color:rgba(0, 0, 0, 0.375);
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
@@ -439,6 +452,59 @@ section {
     font-family: Helvetica;
     justify-content: center;
     font-size: 2vh;
+}
+
+.exp-header h1 {
+    font-size: 2.8vh;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.exp-header h2 {
+    color:rgb(51, 204, 255);
+    font-size: 5.25vh;
+    /* font-style: oblique; */
+
+}
+
+.exp-header p {
+    color: yellow;
+    font-size: 2.5svh;
+}
+.exp-body {
+    /* height: 150vh; */
+    background-color: rgba(99, 14, 159, 0.277);
+    padding: 1.05vh;
+}
+
+.exp-body h1 {
+    font-size: 2vh;
+    padding: .8vh;
+    padding-top: 3vh;
+   
+
+    border-radius: 1vh;
+    background-color: rgba(27, 255, 19, 0.179);
+}
+
+.exp-body p {
+    font-weight: 850;
+    color:#fdfd07;
+    font-family: monospace;
+    text-align: left;
+    font-size: 1.8vh;
+    padding-left: 5.1vh;
+
+}
+.exp-body h4 {
+    font-weight: 850;
+    /* color:#fdfd07; */
+    /* font-family: monospace; */
+    text-align: left;
+    font-size: 1.5vh;
+    /* padding-left: 5.1vh;s */
 }
 
 .projects {
@@ -479,7 +545,7 @@ section {
 
     color: white;
 
-    background-color: rgba(201, 69, 69, 0.451);
+    background-color: rgba(201, 69, 69, 0.907);
     margin: 0;
     /* padding: .8vh; */
     align-items: baseline;
@@ -509,7 +575,7 @@ section {
     font-style: italic; 
         /* margin: 0; */
     color: rgb(255, 255, 255);
-    font-size: 3vh;
+    font-size: 1.5vh;
 }
 .projects-header h2 {
 
@@ -517,11 +583,11 @@ section {
     font-family: Helvetica;
         /* margin: 0; */
     color: rgb(51, 204, 255);
-    font-size: 3vh;
+    font-size:5.25vh;
 }
 
 .projects h1 {
-    font-family: Helvetica;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 
     font-size: 3vh;
     padding:  1vh;
@@ -583,7 +649,7 @@ section {
 
 .box h2 {
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 3vh;
 }
 
 
@@ -591,7 +657,8 @@ section {
     color:rgba(127, 255, 212, 0.634);
     font-size: 1.5vh;
     font-style:oblique;
-    text-indent: 1vh;
+    padding-left: 1vh;
+    /* text-indent: 1vh; */
 }
 
 .blurb {
@@ -599,9 +666,9 @@ section {
     text-align: left;
     font-size: 2vh;
     color: white;
-    background-color: rgba(33, 12, 12, 0.707);
+    background-color: rgba(33, 12, 12, 0.379);
     /* margin: 1vh; */
-    padding-left:5vh;
+    padding-left:2vh;
     padding-right:5vh;
 }
 .blurb ul {
@@ -631,8 +698,42 @@ section {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.188);
 }
+.awards-header {
+    text-shadow: 0 0 1vh black;
+    font-family: Helvetica;
+
+    color: white;
+
+    background-color: rgba(201, 69, 69, 0.907);
+    margin: 0;
+    /* padding: .8vh; */
+    align-items: baseline;
+    display: flex;
+    gap: 1vh;
+    flex-direction: row;
+    font-family: Helvetica;
+    justify-content: center;
+    font-size: 2vh;
+}
+.awards-header h1 {
+    font-size: 2.8vh;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
 
 
+.awards-header h2 {
+    color:rgb(51, 204, 255);
+    font-size: 5.25vh;
+    /* font-style: oblique; */
+
+}
+
+.awards-header p {
+    color: yellow;
+    font-size: 2.5svh;
+}
 
 
 
