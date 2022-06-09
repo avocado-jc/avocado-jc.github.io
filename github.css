@@ -455,7 +455,7 @@ section {
 }
 
 .exp-header h1 {
-    font-size: 2.8vh;
+    font-size: 1.5vh;
     font-style: oblique;
     font-family:Georgia, 'Times New Roman', Times, serif;
 
@@ -589,7 +589,7 @@ section {
 .projects h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
 
-    font-size: 3vh;
+    font-size: 1.5vh;
     padding:  1vh;
 }
 
