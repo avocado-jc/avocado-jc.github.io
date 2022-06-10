@@ -527,11 +527,17 @@ section {
     background-repeat: no-repeat;
 }
 
-.slide h1 {
-    text-shadow: 0 0 1vh black;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.373);
-    font-size: 2vh;
+
+
+.slide h1, .practicum h1 {
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    padding:  1vh;
+    text-shadow: 0 0 1vh rgb(255, 248, 248);
+    color: rgb(7, 7, 7);
+    background-color: rgba(255, 255, 255, 0.636);
+    font-size: 5vh;
 }
 
 .slide p {
@@ -600,13 +606,6 @@ section {
     font-size:5.25vh;
 }
 
-.projects h1 {
-    color: rgb(0, 0, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* margin: 1vh; */
-    font-size: 1.5vh;
-    padding:  1vh;
-}
 
 
 .practicum {
@@ -637,12 +636,7 @@ section {
 }
 
 
-.practicum h1 {
-    text-shadow: 0 0 1vh black;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.373);
-    font-size: 3.5vh;
-}
+
 
 .practicum img {
     border: .5vh solid rgba(228, 58, 58, 0.256);
