@@ -816,8 +816,8 @@ section {
         justify-content: center;
     }
     .menu {
-        /* padding-left: 8vw; */
-        justify-content: center;
+        width: 25vw;
+        justify-content: space-around;
         /* align-items: flex-end; */
         position: fixed;
         /* text-align: right; */
