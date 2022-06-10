@@ -6,12 +6,23 @@ html {
 }
 
 body  {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.099);
     /* background-image: url(pdx.jpg); */
     background-repeat: no-repeat;
     background-position: center;    
 }
-
+.head {
+    background-image: url(pdx.jpg)
+}
+.menu {
+    padding: 1vh;
+    background-color:rgba(137, 43, 226, 0.389);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .body {
     box-shadow: 0 0 1vh rgba(0, 0, 0, 0.278);
     display: flex;
@@ -83,7 +94,7 @@ body  {
 .tagline {
     font-size: 4vw;
     box-shadow: 0 0 1vh rgba(0, 0, 255, 0.143);
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     font-style: oblique;
     font-style: italic; 
     background-color:rgba(0, 0, 255, 0.143);
@@ -179,6 +190,8 @@ nav a:hover {
 }
 
 main {
+    background-image: url(pdx_crop.jpg);
+    background-size: cover;
     /* line-height: 4vh; */
     font-family: Helvetica;
     font-weight: 500;
@@ -293,7 +306,7 @@ audio {
     font-family: Helvetica;
     text-align: center;
     padding: 1vh;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about-box h2 {
@@ -431,7 +444,7 @@ section {
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
-
+    width: 100%;
     justify-content: flex-start;
 
 }
@@ -539,11 +552,12 @@ section {
     /* padding: 5vh */
 }
 
+
 .projects-header {
     text-shadow: 0 0 1vh black;
     font-family: Helvetica;
 
-    color: white;
+    color: rgb(255, 0, 0);
 
     background-color: rgba(201, 69, 69, 0.907);
     margin: 0;
@@ -574,7 +588,7 @@ section {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style: italic; 
         /* margin: 0; */
-    color: rgb(255, 255, 255);
+    color: rgb(255, 2, 2);
     font-size: 1.5vh;
 }
 .projects-header h2 {
@@ -587,8 +601,9 @@ section {
 }
 
 .projects h1 {
+    color: rgb(0, 0, 0);
     font-family:Georgia, 'Times New Roman', Times, serif;
-
+    /* margin: 1vh; */
     font-size: 1.5vh;
     padding:  1vh;
 }
@@ -735,11 +750,92 @@ section {
     font-size: 2.5svh;
 }
 
+.awards {
+    
+}
 
 
 
 
-
-footer {
+.footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.705);
     font-size: 1.8vh;
+    width: 100%;
+    padding: 2vh;
+    text-align: right;
+}
+@media (min-width: 950px) {
+    body {
+        background-size: cover;
+        background-image: url(pdx.jpg);
+        /* width: 100%; */
+        /* flex-wrap: wrap; */
+    }
+    main {
+        height: 150vw;
+    }
+    .about-banner {
+        background-color: rgba(0, 0, 0, 0.062);
+        justify-content: space-evenly;
+        position: fixed;
+        width: 25vw;
+        /* height: 80%; */
+        height: 100%;
+    }
+    .head h1 {
+        font-size: 4vh;
+    }
+    .social-media i {
+        font-size: 3vh;
+    }
+    
+    .menu, .tagline, .social-media {
+        font-size: 1vh;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .body {
+        background-repeat: no-repeat;
+
+        margin-left:25vw;
+        /* width: 25vw; */
+    }
+    .picture img {
+        /* margin-top:35vh; */
+        height: 25vh;
+        width: 25vh;
+        box-shadow: 0 0 1vh rgb(75, 51, 255);
+    }
+    .head {
+        background-image: url(pdx.jpg);
+        background-size: cover;
+        justify-content: center;
+    }
+    .menu {
+        /* padding-left: 8vw; */
+        justify-content: center;
+        /* align-items: flex-end; */
+        position: fixed;
+        /* text-align: right; */
+        flex-direction: row;
+    }
+    .refresh {
+        margin-top:80vw;
+    }
+    .social-media {
+        flex-direction: row;
+        justify-content: center;
+        gap:0
+    }
+    .experience h1 {
+        font-size: 4vh;
+    }
+    .experience h4 {
+        font-size: 2.3vh;
+    }
+    .experience p {
+        font-size: 2vh;
+    }
 }
