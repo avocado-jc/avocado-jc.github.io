@@ -196,7 +196,7 @@ main {
     font-family: Helvetica;
     font-weight: 500;
     letter-spacing: .15vh;
-    padding: 1vh;
+    padding: 5vh;
     margin: 1vh;
     text-align: center;
     justify-content: center;
@@ -773,7 +773,9 @@ section {
         /* flex-wrap: wrap; */
     }
     main {
+        padding: 20vw;
         height: 150vw;
+        font-size: 2.8vh;
     }
     .about-banner {
         background-color: rgba(0, 0, 0, 0.062);
@@ -822,7 +824,9 @@ section {
         flex-direction: row;
     }
     .refresh {
-        margin-top:80vw;
+        height:12vh;
+        margin-left: 25vw;
+        /* margin-top:5vh; */
     }
     .social-media {
         flex-direction: row;
