@@ -92,11 +92,11 @@ body  {
 }
 
 .tagline {
-    font-size: 4vw;
+    /* font-size: 3vw; */
     box-shadow: 0 0 1vh rgba(0, 0, 255, 0.143);
     margin-bottom: 1vh;
-    font-style: oblique;
-    font-style: italic; 
+    /* font-style: oblique; */
+    /* font-style: italic;  */
     background-color:rgba(0, 0, 255, 0.143);
     display: flex;
     flex-direction: row;
@@ -433,7 +433,7 @@ section {
     transform: rotate(-20deg);
 }
 
-.experience {
+.section {
     color: white;
     font-size: 2.2vh;
     background-image: url(IMG_4949.jpg);
@@ -835,7 +835,7 @@ section {
 
     }
     
-    }
+
     .refresh {
         position:relative;
         /* height:12vh; */
