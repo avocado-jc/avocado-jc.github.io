@@ -859,3 +859,75 @@ section {
     }
     
 }
+
+.products-header {
+    text-shadow: 0 0 1vh black;
+    font-family: Helvetica;
+
+    color: white;
+
+    background-color: rgb(201, 69, 69);
+    /* margin: 0; */
+    padding: .5vh;
+    align-items: baseline;
+    display: flex;
+    gap: 1vh;
+    flex-direction: row;
+    font-family: Helvetica;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+.products-header h1 {
+    font-size: 1.5vh;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.products-header h2 {
+    color:rgb(51, 204, 255);
+    font-size: 5.25vh;
+    /* font-style: oblique; */
+
+}
+
+.products-header p {
+    color: yellow;
+    font-size: 2.5svh;
+}
+.article {
+    margin: 1vh;
+    height: 150vh;
+    background-color: rgba(154, 131, 170, 0.277);
+    padding: 1.05vh;
+}
+
+.article h1 {
+    font-size: 2vh;
+    padding: .8vh;
+    padding-top: 3vh;
+   
+
+    border-radius: 1vh;
+    background-color: rgba(27, 255, 19, 0.179);
+}
+
+.article p {
+    font-weight: 850;
+    color:#fdfd07;
+    font-family: monospace;
+    text-align: left;
+    font-size: 1.8vh;
+    padding-left: 5.1vh;
+
+}
+.article h4 {
+    font-weight: 850;
+    /* color:#fdfd07; */
+    /* font-family: monospace; */
+    text-align: left;
+    font-size: 1.5vh;
+    /* padding-left: 5.1vh;s */
+}
