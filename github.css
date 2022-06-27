@@ -190,6 +190,7 @@ nav a:hover {
 }
 
 main {
+    gap: 2vh;
     background-image: url(pdx_crop.jpg);
     background-size: cover;
     /* line-height: 4vh; */
@@ -312,9 +313,6 @@ audio {
 
 .about-box h2 {
     text-shadow: 0 0 1vh black;
-    background-color: rgba(0, 0, 0, 0.152);
-    border-radius: 15vh;
-    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.292);
 }
 
 .about-text {
@@ -528,7 +526,9 @@ section {
     background-repeat: no-repeat;
 }
 
-
+.slide {
+    justify-content: center;
+}
 
 .slide h1, .practicum h1 {
     
@@ -542,15 +542,15 @@ section {
 }
 
 .slide p {
-    text-shadow: 0 0 1vh black;
+    /* text-shadow: 0 0 1vh black; */
     line-height: 3.5vh;
-    letter-spacing: .2vh;
+    /* letter-spacing: .2vh; */
     padding: 7.5vh;
     padding-left: 1vh;
-    font-weight: 550;
+    font-weight: 650;
     text-align: left;
-    color: white;
-    background-color:rgba(80, 222, 125, 0.307);
+    color: rgb(0, 0, 0);
+    background-color:rgba(252, 252, 252, 0.8);
     font-family: Helvetica;
 
     /* padding: 5vh; */
@@ -559,6 +559,13 @@ section {
     /* padding: 5vh */
 }
 
+.slide h4 {
+    text-shadow: 0 0 1vh black;
+    color: white;
+
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.249);
+}
 
 .projects-header {
     text-shadow: 0 0 1vh black;
@@ -662,10 +669,14 @@ section {
     font-size: 3vh;
 }
 
+.box {
+    display: flex;
+    text-align: center;
+}
 
 .box p {
-    color:rgba(127, 255, 212, 0.634);
-    font-size: 1.5vh;
+    color:rgb(127, 255, 212);
+    font-size: 1.8vh;
     font-style:oblique;
     padding-left: 1vh;
     /* text-indent: 1vh; */
@@ -678,8 +689,8 @@ section {
     color: white;
     background-color: rgba(33, 12, 12, 0.379);
     /* margin: 1vh; */
-    padding-left:2vh;
-    padding-right:5vh;
+    padding-left:2.5vh;
+    padding-right:2.55vh;
 }
 .blurb ul {
     
@@ -700,8 +711,9 @@ section {
 }
 
 .blurb h1 {
+    font-size: 2.8vh;
     text-shadow: 0 0 1vh black;
-    font-weight: 450;
+    font-weight: 250;
     letter-spacing: .6vh;
     padding: 3vh;
     padding-bottom: 1vh;
