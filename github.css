@@ -364,7 +364,7 @@ audio {
 
 .about-header p {
     text-shadow: 0 0 1vh black;
-    color: yellow;
+    /* color: yellow; */
     height: 100%;
     text-align: center;
     display: flex;
@@ -493,7 +493,7 @@ section {
 }
 
 .exp-header p {
-    color: yellow;
+    color: rgb(47, 47, 39);
     font-size: 2.5svh;
 }
 .exp-body {
@@ -523,6 +523,9 @@ section {
     background-size: 100%;
 }
 
+._94info p {
+    font-size: 5vw;
+}
 ._94info article {
     background-color:rgba(217, 217, 236, 0.696);
     padding: 2vh;
@@ -565,8 +568,9 @@ section {
     padding: 2vh;
 }
 .exp-body p {
-    font-weight: 850;
-    color:#fdfd07;
+    background-color: whitesmoke;
+    font-weight: 950;
+    color:#101004;
     font-family: monospace;
     text-align: left;
     font-size: 4.8vh;
@@ -658,7 +662,7 @@ section {
 
     padding: 1vh;
     margin: 0;
-    color: yellow;
+    /* color: yellow;s */
     /* height: 100%; */
     text-align: center;
     display: flex;
@@ -827,13 +831,13 @@ section {
 }
 
 .awards-header p {
-    color: yellow;
+    /* color: yellow; */
     font-size: 2.5svh;
 }
 
-.awards {
+/* .awards {
     
-}
+} */
 
 
 
@@ -886,7 +890,7 @@ section {
 }
 
 .products-header p {
-    color: yellow;
+    /* color: yellow; */
     font-size: 2.5svh;
 }
 .article {
@@ -1031,7 +1035,7 @@ section {
         font-size: 2.3vh;
     }
     .experience p {
-        font-size: 2vh;
+        font-size: 5vh;
     }
     .tictactoe {
         margin-left: 25vw;
