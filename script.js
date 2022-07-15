@@ -116,7 +116,7 @@ for (key in boardSpaces) {
             legend.innerText = 'Player X'
             token = tokens[0]
             spc.innerText = token
-            spc.style.fontSize = ('20vh')
+            spc.style.fontSize = ('10vh')
             console.log(token)
             console.log(spc)
             let key = Object.keys(Spaces).find(k=>Spaces[k]===spc)
@@ -133,7 +133,7 @@ for (key in boardSpaces) {
             legend.innerText = 'Player O'
             token = tokens[1]
             boardSpace.innerText = token
-            spc.style.fontSize = ('20vh')
+            spc.style.fontSize = ('10vh')
             spc.innerText = token
             console.log(token)
             console.log(spc)

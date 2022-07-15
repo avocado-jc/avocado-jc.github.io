@@ -43,13 +43,15 @@
                 
             </div> 
             <nav class="menu" id="menu">
-                <a href="#" class="nounderline">Home</a>
-                <a href="#ab">About</a>
-                <a href="#e">Experience</a>
-                <a href="#pj">Projects</a>
-                <a href="#pd">Articles</a>
+                <!-- <a href="#" class="nounderline">{Home} </a> -->
+                <a href="#ab">{About}</a>
+                <a href="#e">{Experience} </a>
+                <a href="#pj">{Projects}</a>
+                <a href="#pd">{Articles} </a>
+                
 
-                <a href="#tictactoe">Tic-Tac-Toe</a>
+                <!-- <a href="#tictactoe">Tic-Tac-Toe</a> -->
+                <a href="#bible-reader">{Bible-Reader}</a>
             </nav>
         </div>  
         
@@ -74,7 +76,7 @@
             <div class="about-header"> 
                
                 
-                <h2>about</h2>
+                <h2>a b o u t</h2>
                 
             </div>
             
@@ -137,7 +139,7 @@
     
         <article class="experience" id="e"> 
             <div class="exp-header">                 
-                <h2>experience</h2>
+                <h2>e x p e r i e n c e</h2>
             </div>
             <div class="exp-body">
                 <div class="_94info">
@@ -221,7 +223,7 @@ expected in accordance to daily requirements
         <article class="projects" id="pj"> 
             <div class="projects-header"> 
                 
-            <h2>projects</h2>
+            <h2>p r o j e c t s</h2>
                 
             </div>
             
@@ -263,7 +265,7 @@ expected in accordance to daily requirements
 
         <article class="products" id="pd"> 
             <div class="products-header">
-                <h2>articles</h2>
+                <h2>a r t i c l e s</h2>
             </div>    
             <div class="article">
                 <h1>The Crescent; George Fox University newspaper article</h1>
@@ -293,15 +295,39 @@ expected in accordance to daily requirements
                 
             </div>
             </article>
-        <article class="footer">
-            <footer> 
-                <h1>last updated: 6/9/22 </h1>
-                </footer>
-        </article>
+        
     </section>  
     
     
     
+    
+      
+    <div id='bible-reader'>
+        <h1>New Testament Bible Reader</h1>
+        <p> Powered by <a href="https://bible-api.com/"> bible-api.com </a> and Vue</p>
+        <div id="input">
+            Choose book!
+        </div>  
+        <div id="app">
+            
+            <fieldset>
+                
+                <button @click="loadVerses" id="button">Update Scripture! (make sure chapter is selected also)</button> Click arrow to show/hide scripture
+                
+                <details>
+                    <summary v-if="bibleVerses"> {{ bibleVerses.reference }} </summary>
+                    
+                    <ol>
+                        <li v-for="verse in bibleVerses.verses" :key="verse.id">
+                            <p>{{ verse.text }}</p>
+                        </li>
+                        
+                    </ol>
+                </details>
+
+            </fieldset>
+        </div>
+    </div>
     <div class="tictactoe">
         <fieldset id="tictactoe"> Tic-Tac-Toe
             <legend id="legend">
@@ -312,14 +338,20 @@ expected in accordance to daily requirements
             </div>
     
         </fieldset>
+        <button style="text-align:center" id="cont"><a href="">Play Again!</a></button> 
     </div>
-   
-    <button style="text-align:center" id="cont"><a href="">Play Again!</a></button> 
-    <a href="https://www.facebook.com/sharer/sharer.php?u=jonathoncavada.dev">Share on Facebook!</a>
-    <a href='https://www.linkedin.com/shareArticle?mini=true&url=jonathoncavada.dev&title=Jonathon%20Cavada%20-%20Personal%20Portfolio&summary=Personal%20website%20to%20illustrate%20the%20level%20of%20professionalism%20and%20problem-solving%20I%20have%20to%20offer.&source='>Share on LinkedIn!</a>
+    <article class="footer">
+        <footer> 
+            <h1>last updated: 7/15/22; with no help from PDX Code Guild! </h1>
+            </footer>
+    </article>
+    <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=jonathoncavada.dev">Share on Facebook!</a> -->
+    <!-- <a href='https://www.linkedin.com/shareArticle?mini=true&url=jonathoncavada.dev&title=Jonathon%20Cavada%20-%20Personal%20Portfolio&summary=Personal%20website%20to%20illustrate%20the%20level%20of%20professionalism%20and%20problem-solving%20I%20have%20to%20offer.&source='>Share on LinkedIn!</a> -->
     <script src="script.js"></script>
     <script src="scroll.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
     
     
 </body>
