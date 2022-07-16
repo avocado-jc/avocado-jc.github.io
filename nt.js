@@ -2,7 +2,7 @@
 // let chapter = document.querySelector("#chapter")
 // let chapter
 
-let bibleReader = document.querySelector('#bible-reader')
+let ntReader = document.querySelector('#nt-reader')
 
 const booksNT = {
     'matthew':'28',
@@ -34,64 +34,66 @@ const booksNT = {
     'revelation':'22'
 }
 
-const inputDiv = document.querySelector("#input")
+
+
+const ntInputDiv = document.querySelector("#nt-input")
 // bibleReader.appendChild(inputDiv)
-let book = document.createElement('select')
+let ntBook = document.createElement('select')
 label = document.createElement('label')
 label.innerText = "Select a Book to Read"
-book.appendChild(label)
-book.setAttribute('id','book')
-let chapterNum
+ntBook.appendChild(label)
+ntBook.setAttribute('id','nt-book')
+let ntChapterNum
 blank = document.createElement("option")
 blank.innerText = ''
-book.appendChild(blank)
+ntBook.appendChild(blank)
 
 for (key in booksNT) {
-    bookName = document.createElement("option")
-    bookName.innerText = key
-    book.appendChild(bookName)
+    ntBookName = document.createElement("option")
+    ntBookName.innerText = key
+    ntBook.appendChild(ntBookName)
 }
-inputDiv.appendChild(book)
+ntInputDiv.appendChild(ntBook)
 let chapter = ''
-book.addEventListener('change', function(chapter) {
-    chapter = document.createElement('select')
-    chapter.setAttribute("id","chapter")
-    button = document.querySelector('#button')
-    button.addEventListener('click', function() {
-        if (chapter != '') {
-            chapter = document.querySelector("#chapter")
+ntBook.addEventListener('change', function() {
+    ntChapter = document.createElement('select')
+    ntChapter.setAttribute("id","nt-chapter")
+    ntButton = document.querySelector('#nt-button')
+    ntButton.addEventListener('click', function() {
+        if (ntChapter != '') {
+            ntChapter = document.querySelector("#nt-chapter")
             // alert(chapter)
-            chapter.remove()
+            ntChapter.remove()
         }
         
     })
 
     // book.setAttribute('type', 'select')
-    inputDiv.appendChild(chapter)
-    chapterRange = booksNT[book.value]
+    ntInputDiv.appendChild(ntChapter)
+    let ntChapterRange = booksNT[ntBook.value]
     // alert(chapterRange)
-    for (i=1; i <= chapterRange; i++) {
-        chapterNum = document.createElement('option')
-        chapterNum.innerText = i
-        chapter.appendChild(chapterNum)
-        chapterNum = chapter.value
+    for (i=1; i <= ntChapterRange; i++) {
+        ntChapterNum = document.createElement('option')
+        ntChapterNum.innerText = i
+        ntChapter.appendChild(ntChapterNum)
+        // ntChapterNum = ntChapter.value
     }
 })
 
-const vm = new Vue({
-    el: "#app",
+const vm_nt = new Vue({
+    el: "#app-nt",
     data: {
-        bibleVerses: {}
+        ntBibleVerses: {}
     },
     methods: {
-        loadVerses: function() {
+        loadNTVerses: function() {
             axios({
                 method: 'get',
-                url: 'https://bible-api.com/'+book.value+'+'+chapterNum
+                url: 'https://bible-api.com/'+ntBook.value+'+'+ntChapter.value
 
             }).then(response => {
-                this.bibleVerses = response.data
-                console.log(this.bibleVerses.reference)
+                this.ntBibleVerses = response.data
+                console.log(this.ntBibleVerses.reference)
             }).catch(error => {
                 alert("ERROR: Make sure to select a book, and then select a chapter number from dropdown lists")
                 console.log(error)

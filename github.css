@@ -186,9 +186,8 @@ nav a:hover {
 
 .social-media i {
     box-shadow: .5vh .51vh .5vh rgba(0, 0, 0, 0.211);
-    /* background-color:rgb(80, 144, 222); */
+    background-color:rgb(80, 144, 222);
     padding: .70vh;
-    /* margin: 5vh; */
     margin-bottom: 1vh;
     border-radius: 100vw;
     border: .1vh solid rgb(255, 255, 255);
@@ -242,7 +241,7 @@ main h1 {
 
 }
 main p {
-    font-size: 5vh;
+    font-size: 3.5vw;
     padding: 8vw;
     font-weight: 650;
     letter-spacing: .1vh;
@@ -384,7 +383,7 @@ audio {
     font-family: monospace;
 
     color: rgb(255, 255, 255);
-    font-size:10.25vh;
+    font-size:5.25vw;
 }
 
 .home-banner{
@@ -478,11 +477,11 @@ section {
     flex-direction: row;
     font-family: monospace;
     justify-content: center;
-    font-size: 2vh;
+    font-size: 2vw;
 }
 
 .exp-header h1 {
-    font-size: 8.5vh;
+    font-size: 3.5vw;
     font-style: oblique;
     font-family: monospace;
 
@@ -495,12 +494,12 @@ section {
     font-family: monospace;
 
     color: rgb(255, 255, 255);
-    font-size:10.25vh;
+    font-size:3.25vw;
 }
 
 .exp-header p {
     color: rgb(47, 47, 39);
-    font-size: 2.5svh;
+    font-size: 2.5vw;
 }
 .exp-body {
     width: 100%;
@@ -516,7 +515,7 @@ section {
 
 .exp-body h1 {
     text-shadow: 0 0 1vh white;
-    font-size:4.75vh;
+    font-size:2.75vw;
     padding: .8vh;
     padding-top: 3vh;
     border-radius: 1vh;
@@ -530,7 +529,7 @@ section {
 }
 
 ._94info p {
-    font-size: 5vw;
+    font-size: 2.5vw;
 }
 ._94info article {
     background-color:rgba(217, 217, 236, 0.696);
@@ -549,6 +548,10 @@ section {
 .farminfo article {
     background-color:rgba(217, 217, 236, 0.696);
     padding: 2vh;
+}
+
+article h2, article h3 {
+    font-size: 2.5vw;
 }
 
 .body_p {
@@ -579,16 +582,16 @@ section {
     color:#101004;
     font-family: monospace;
     text-align: left;
-    font-size: 4.8vh;
+    font-size: 2.5vw;
     padding-left: 5.1vh;
 
 }
-.exp-body h4 {
+.exp-body h4, .practicum h4 {
     font-weight: 850;
     /* color:#fdfd07; */
     font-family: monospace;
     text-align: left;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     /* padding-left: 5.1vh;s */
 }
 
@@ -616,7 +619,7 @@ section {
 
 .slide p {
     /* text-shadow: 0 0 1vh black; */
-    line-height: 3.5vh;
+    /* line-height: 3.5vh; */
     /* letter-spacing: .2vh; */
     padding: 7.5vh;
     padding-left: 1vh;
@@ -628,14 +631,14 @@ section {
 
     /* padding: 5vh; */
     margin: 1vh;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     /* padding: 5vh */
 }
 
-.slide h4 {
-    text-shadow: 0 0 1vh black;
-    color: white;
-
+.slide h4, .practicum h4 {
+    /* text-shadow: 0 0 1vh black; */
+    /* color: white; */
+    font-size: 2vw;
     padding: 1vh;
     background-color: rgba(255, 255, 255, 0.249);
 }
@@ -691,14 +694,14 @@ section {
     font-family: monospace;
 
     color: rgb(255, 255, 255);
-    font-size:10.25vh;
+    font-size:5.25vw;
 }
 
 
 
 .practicum {
     font-family: monospace;
-
+    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -707,7 +710,7 @@ section {
 
 .practicum p {
     text-shadow: 0 0 1vh black;
-    line-height: 3.5vh;
+    /* line-height: 3.5vh; */
     letter-spacing: .2vh;
     padding: 7.5vh;
     padding-left: 1vh;
@@ -719,7 +722,7 @@ section {
 
     /* padding: 5vh; */
     margin: 1vh;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     /* padding: 5vh */
 }
 
@@ -727,10 +730,12 @@ section {
 
 
 .practicum img {
-    height: 100%;
+
+    margin: 4vh;
+    height: 50%;
     border: .5vh solid rgba(228, 58, 58, 0.256);
     padding: .2vh;
-    width: 33.3%
+    width: 33.33%
 }
 
 .box {
@@ -770,7 +775,7 @@ section {
 .blurb {
     text-shadow: 0 0 1vh black;
     text-align: left;
-    font-size: 2vh;
+    font-size: 1.5vw;
     color: white;
     background-color: rgba(33, 12, 12, 0.379);
     /* margin: 1vh; */
@@ -783,7 +788,7 @@ section {
     gap: 1vh;
     text-shadow: 0 0 1vh rgb(248, 15, 15);
     text-transform: uppercase;
-    font-size: 8vh;
+    font-size: 5vw;
 
 }
 
@@ -791,12 +796,12 @@ section {
     font-family: monospace;
     text-shadow: 0 0 1vh rgb(0, 21, 255);
     text-transform: lowercase;
-    font-size: 5vh;
+    font-size: 3.5vw;
 
 }
 
 .blurb h1 {
-    font-size: 8vh;
+    font-size: 5vw;
     text-shadow: 0 0 1vh black;
     font-weight: 250;
     letter-spacing: .6vh;
@@ -838,7 +843,7 @@ section {
     font-family: monospace;
 
     color: rgb(255, 255, 255);
-    font-size:10.25vh;
+    font-size:5.25vw;
 }
 
 .awards-header p {
@@ -901,7 +906,7 @@ section {
     font-family: monospace;
 
     color: rgb(255, 255, 255);
-    font-size:10.25vh;
+    font-size:5.25vw;
 
 }
 
@@ -917,7 +922,7 @@ section {
 }
 
 .article h1 {
-    font-size: 2vh;
+    font-size: 2vw;
     padding: .8vh;
     padding-top: 3vh;
    
@@ -931,7 +936,7 @@ section {
     /* color:#fdfd07; */
     font-family: monospace;
     text-align: left;
-    font-size: 1.8vh;
+    font-size: 1.8vw;
     padding-left: 5.1vh;
 
 }
@@ -940,10 +945,11 @@ section {
     /* color:#fdfd07; */
     font-family: monospace;
     text-align: left;
-    font-size: 1.5vh;
-    /* padding-left: 5.1vh;s */
+    font-size: 1.5vw;
+    padding-left: 5.1vh;
 }
 .tictactoe {
+    width: 100%;
     background-color: whitesmoke;
 }
 
@@ -967,7 +973,20 @@ section {
     text-align: center;
 }
 
-
+#nt-reader {
+    width: 100%;
+    padding: 1vh;
+    /* margin-left: 25vw; */
+    background-color: whitesmoke;
+    margin-bottom: 20vh
+}
+#ot-reader {
+    width: 100%;
+    padding: 1vh;
+    /* margin-left: 25vw; */
+    background-color: whitesmoke;
+    margin-bottom: 20vh
+}
 @media (min-width: 950px) {
     
     body {
@@ -1057,13 +1076,22 @@ section {
         font-size: 5vh;
     }
     .tictactoe {
-        margin-left: 25vw;
+        width: 100%;
     
     }
-    #bible-reader {
+    #nt-reader {
+        width: 100%;
         padding: 1vh;
-        margin-left: 25vw;
-        background-color: whitesmoke
+        /* margin-left: 25vw; */
+        background-color: whitesmoke;
+        margin-bottom: 20vh
+    }
+    #ot-reader {
+        width: 100%;
+        padding: 1vh;
+        /* margin-left: 25vw; */
+        background-color: whitesmoke;
+        margin-bottom: 20vh
     }
     .about-banner h1 {
         border-radius: 10vh;
@@ -1073,8 +1101,6 @@ section {
     .about-banner h2 {
         font-size: 1.2vw;
     }
-    .footer {
-        margin-left: 25vw;
-    }
+    
 }
 
