@@ -34,7 +34,16 @@ const booksNT = {
     'revelation':'22'
 }
 
-
+const translations = {
+    'king james bible':'?translation=kjv',
+    'bible in basic english':'?translation=bbe',
+    'world english bible':'',
+    'open english bible, commonwealth edition':'?translation=oeb-cw',
+    'world english bible, british edition':'?translation=webbe',
+    'open english bible, US edition':'?translation=oeb-us',
+    'joao ferreira de almeida':'?translation=almeida',
+    'protestant romanian correct cornilescu version':'?translation=rccv'
+}
 
 const ntInputDiv = document.querySelector("#nt-input")
 // bibleReader.appendChild(inputDiv)
@@ -54,7 +63,10 @@ for (key in booksNT) {
     ntBook.appendChild(ntBookName)
 }
 ntInputDiv.appendChild(ntBook)
-let chapter = ''
+let ntChapter 
+let ntTranslation
+let ntChapterRange
+let ntTranslations
 ntBook.addEventListener('change', function() {
     ntChapter = document.createElement('select')
     ntChapter.setAttribute("id","nt-chapter")
@@ -62,15 +74,18 @@ ntBook.addEventListener('change', function() {
     ntButton.addEventListener('click', function() {
         if (ntChapter != '') {
             ntChapter = document.querySelector("#nt-chapter")
+            ntTranslations = document.querySelector('#nt-translations')
             // alert(chapter)
             ntChapter.remove()
+            ntTranslations.remove()
+
         }
         
     })
 
     // book.setAttribute('type', 'select')
     ntInputDiv.appendChild(ntChapter)
-    let ntChapterRange = booksNT[ntBook.value]
+    ntChapterRange = booksNT[ntBook.value]
     // alert(chapterRange)
     for (i=1; i <= ntChapterRange; i++) {
         ntChapterNum = document.createElement('option')
@@ -78,7 +93,22 @@ ntBook.addEventListener('change', function() {
         ntChapter.appendChild(ntChapterNum)
         // ntChapterNum = ntChapter.value
     }
+    ntTranslations = document.createElement('select')
+    ntTranslations.setAttribute('id','nt-translations')
+    ntInputDiv.appendChild(ntTranslations)
+    for (key in translations) {
+        ntTranslation = document.createElement('option')
+
+        ntTranslation.innerText = key
+
+        ntTranslations.appendChild(ntTranslation)
+    }
+    
 })
+
+
+
+
 
 const vm_nt = new Vue({
     el: "#app-nt",
@@ -89,7 +119,7 @@ const vm_nt = new Vue({
         loadNTVerses: function() {
             axios({
                 method: 'get',
-                url: 'https://bible-api.com/'+ntBook.value+'+'+ntChapter.value
+                url: 'https://bible-api.com/'+ntBook.value+'+'+ntChapter.value+translations[ntTranslations.value]
 
             }).then(response => {
                 this.ntBibleVerses = response.data
