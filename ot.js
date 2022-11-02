@@ -42,9 +42,7 @@ const booksOT = {
 // let book = document.querySelector("#book")
 // let chapter = document.querySelector("#chapter")
 
-
 let otReader = document.querySelector('#ot-reader')
-
 
 const otInputDiv = document.querySelector("#ot-input")
 // bibleReader.appendChild(inputDiv)
