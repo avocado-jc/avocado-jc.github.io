@@ -21,7 +21,7 @@
 
             <h1> Jonathon Cavada </h1>
             <div class= "tagline"> 
-                <h2>Developer</h2>
+                <h2> USAF Veteran</h2>
                 <h2>Data Specialist</h2>
                 <h2>Problem-solver</h2>
             </div>
@@ -35,7 +35,10 @@
                 </a>
                 <a href="https://github.com/avocado-jc/cavada_code" target="_blank">
                     <i class="fa fa-github"></i>   
-                </a>               
+                </a>       
+                <a href="https://daily-bible.org/pages/reader.html" target="_blank">
+                    <i class="fa fa-book"></i>   
+                </a>         
                 
 
                 
@@ -49,7 +52,7 @@
                 
 
                 <!-- <a href="#tictactoe">Tic-Tac-Toe</a> -->
-                <a href="#nt-reader">{Bible-Reader}</a>
+                <a href="#nt-reader">{Bible}</a>
             </nav>
         </div>  
         
@@ -290,13 +293,11 @@ expected in accordance to daily requirements
                 
             </div>
             </article>
+            <div style="border: .5em solid black; background-color: rgba(245, 245, 245, 0.507); width: 100%"> 
+                <h1 style="text-align: center">Bible Reader</h1>
             <div id='nt-reader'>
-                <h1>New Testament* Bible Reader</h1>
-                *website I am pulling from only provides first verse for single chapter books for some strange reason
-                <br><br>
-                this code is a bit buggy, you have to first select book name, then chapter, then hit the 'update scripture' button. if an extra chapter drop down shows up, you will have to likely refresh page, sorry!
+                <h4 style="text-align: center">New Testament</h4>
 
-                <p> Powered by <a href="https://bible-api.com/"> bible-api.com </a> and Vue</p>
                 <div id="nt-input">
                     Choose book!
                 </div>  
@@ -304,7 +305,7 @@ expected in accordance to daily requirements
                     
                     <fieldset>
                         
-                        <button @click="loadNTVerses" id="nt-button">Update Scripture! (make sure chapter is selected also)</button> Click arrow to show/hide scripture
+                        <button @click="loadNTVerses" id="nt-button">Update</button> 
                         
                         <details>
                             <summary v-if="ntBibleVerses"> {{ ntBibleVerses.reference }} </summary>
@@ -320,13 +321,11 @@ expected in accordance to daily requirements
                     </fieldset>
                 </div>
             </div>
+            
             <div id='ot-reader'>
-                <h1>Old Testament* Bible Reader</h1>
-                *website I am pulling from only provides first verse for single chapter books for some strange reason
-                <br><br>
-                this code is a bit buggy, you have to first select book name, then chapter, then hit the 'update scripture' button. if an extra chapter drop down shows up, you will have to likely refresh page, sorry!
-
-                <p> Powered by <a href="https://bible-api.com/"> bible-api.com </a> and Vue</p>
+                <h4 style="text-align: center">Old Testament </h4>
+  
+                
                 <div id="ot-input">
                     Choose book!
                 </div>  
@@ -334,8 +333,7 @@ expected in accordance to daily requirements
                     
                     <fieldset>
                         
-                        <button @click="loadOTVerses" id="ot-button">Update Scripture! (make sure chapter is selected also)</button> Click arrow to show/hide scripture
-                        
+                        <button @click="loadOTVerses" id="ot-button">Update</button>                         
                         <details>
                             <summary v-if="otBibleVerses"> {{ otBibleVerses.reference }} </summary>
                             
@@ -350,6 +348,8 @@ expected in accordance to daily requirements
                     </fieldset>
                 </div>
             </div>
+            <p style="text-align:center"> Powered by <a href="https://bible-api.com/"> bible-api.com </a> and Vue</p>
+            </div>  
             <div class="tictactoe">
                 <fieldset id="tictactoe"> Tic-Tac-Toe
                     <legend id="legend">
@@ -361,10 +361,11 @@ expected in accordance to daily requirements
             
                 </fieldset>
                 <button style="text-align:center" id="cont"><a href="">Play Again!</a></button> 
+                
             </div>
             <article class="footer">
                 <footer> 
-                    <h1>last updated: 9/15/22 </h1>
+                    <h1>last updated: 11/12/22 </h1>
                     </footer>
             </article>    
     </section>  
